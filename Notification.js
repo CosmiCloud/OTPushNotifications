@@ -18,7 +18,6 @@ var title4 = process.env.NODENAME + ' - Time Out'
 var title5 = process.env.NODENAME + ' - Eth Balance Low'
 var title6 = process.env.NODENAME + ' - New Job Accepted!'
 var title7 = process.env.NODENAME + ' - FATAL - ATTENTION REQUIRED'
-var title8 = process.env.NODENAME + ' - test profile'
 
 function PushNotification(PushTitle, PushText)
                 {
