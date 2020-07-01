@@ -1,6 +1,6 @@
 # OTPushNotifications
 This will help you set up a cron job that runs every 5 minutes that will search your otnode logs for specific keywords. A Notifiction will be sent to you with the log lines that we're found that contain that keyword and are not older than 5 minutes. If no results are returned, then a notification will not be sent.<br>
-Currently we are monitoring for:
+<br>Currently we are monitoring for:<br>
 Memory Leaks<br>
 Unhandled Rejections<br>
 Resource Locks<br>
@@ -9,6 +9,7 @@ Low Ether Balances<br>
 Winning a job offer<br>
 Fatal Errors (node crashes)
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Install the 'Notify My Device' app from the app store and install it onto your mobile device.
 
 Navigate to https://www.notifymydevice.com/ and create an account. Go to 'My applications' and create an application. Copy the API key and save it for later.
