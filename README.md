@@ -15,11 +15,10 @@ Install the 'Notify My Device' app from the app store and install it onto your m
 Navigate to https://www.notifymydevice.com/ and create an account. Go to 'My applications' and create an application. Copy the API key and save it for later.
 
 On your node:<br>
-Install npm, nodejs, and dotenv
+Install npm, nodejs
 <ul>
 <li>sudo apt install npm</li>
 <li>sudo apt install nodejs</li>
-<li>sudo apt install dotenv</li>
 </ul>
 
 Edit your environment variables inside of your directory and add your API key and change your node name.
