@@ -72,9 +72,17 @@
 },
 {
     "enabled" : "y",
-    "apikey" : "KQBSVFVN0FOQO4RHHOIFM8O3F",
+    "apikey" : "insert apikey",
     "nodename" : "Test Node",
     "searchfor"   : "'Downloading update:'",
     "since" : "5m",
     "header": "Update in progress."
+},
+{
+    "enabled" : "y",
+    "apikey" : "insert apikey",
+    "nodename" : "Test Node",
+    "searchfor"   : "'Failed to process command'",
+    "since" : "5m",
+    "header": "Failed to process command"
 }]
