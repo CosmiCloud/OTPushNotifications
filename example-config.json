@@ -68,5 +68,5 @@
     "nodename" : "Test Node",
     "searchfor"   : "KADemlia",
     "since" : "5m",
-    "header": "Low trac balance"
+    "header": "KADemlia warning"
 }]
