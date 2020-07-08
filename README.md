@@ -1,5 +1,5 @@
 # OTPushNotifications
-This will help you set up a cron job that runs every 5 minutes that will search your otnode logs for specific phrases. A Notifiction will be sent to you with the log lines that we're found and are not older than 5 minutes. If no results are returned, then a notification will not be sent.<br>
+This will help you set up a cron job that runs every 5 minutes (or any frequency you desire) that will search your otnode logs for specific phrases. A Notifiction will be sent to you with the log lines that we're found and are not older than 5 minutes(adjustable). If no results are returned, then a notification will not be sent.<br>
 By customizing the json config, you can configure the script to notify you about anything you want.
 <br>
 
