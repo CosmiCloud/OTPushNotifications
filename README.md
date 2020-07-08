@@ -1,13 +1,7 @@
 # OTPushNotifications
-This will help you set up a cron job that runs every 5 minutes that will search your otnode logs for specific keywords. A Notifiction will be sent to you with the log lines that we're found that contain that keyword and are not older than 5 minutes. If no results are returned, then a notification will not be sent.<br>
-<br>Currently we are monitoring for:<br>
-Memory Leaks<br>
-Unhandled Rejections<br>
-Resource Locks<br>
-Time outs<br>
-Low Ether Balances<br>
-Winning a job offer<br>
-Fatal Errors (node crashes)
+This will help you set up a cron job that runs every 5 minutes that will search your otnode logs for specific phrases. A Notifiction will be sent to you with the log lines that we're found and are not older than 5 minutes. If no results are returned, then a notification will not be sent.<br>
+By customizing the json config, you can configure the script to notify you about anything you want.
+<br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Install the 'Notify My Device' app from the app store and install it onto your mobile device.
@@ -21,15 +15,11 @@ Install npm, nodejs
 <li>sudo apt install nodejs</li>
 </ul>
 
-Edit your environment variables inside of your directory and add your API key and change your node name.
+Create and edit a config.json file in your directory and copy the configuration from the example-config.json file.
 <ol>
-<li>Sudo nano .env</li>
-<li>Paste and edit the variables below</li>
+<li>Sudo nano config.json</li>
+<li>Paste and edit the text from the example-config.json file into your config.json file</li>
 </ol>
-
-APIKEY="myapikey"<br>
-NODENAME="my node name"<br>
-CHOSEN='"I've been chosen"'
 
 Add a Cron job to the bottom of your crontab to trigger the script. Test running the command before adding it to your crontab.
 <ol>
