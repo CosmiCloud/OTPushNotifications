@@ -9,7 +9,7 @@ for(var i = 0; i < json.length; i++) {
 
 function PushNotification(PushTitle, PushText)
                 {
-                         var apiKey = obj.apikey
+                         const apiKey = obj.apikey
                          var postdata = querystring.stringify({
                                  'ApiKey': apiKey,
                                  'PushTitle': PushTitle,
