@@ -7,11 +7,10 @@ const json = require('./config.json');
 for(var i = 0; i < json.length; i++) {
     var obj = json[i];
 
-function PushNotification(PushTitle, PushText)
+function PushNotification(PushTitle, PushText, API)
                 {
-                         const apiKey = obj.apikey
                          var postdata = querystring.stringify({
-                                 'ApiKey': apiKey,
+                                 'ApiKey': API,
                                  'PushTitle': PushTitle,
                                  'PushText': PushText,
                                  });
@@ -48,23 +47,22 @@ function PushNotification(PushTitle, PushText)
     if(obj.enabled == 'y'){
         const command = 'sudo docker logs --since '+obj.since+' otnode | grep '+obj.searchfor
         const header = obj.nodename + ' - '+obj.header
+        const apiKey = obj.apikey
+        const os = new os_func();
 
         function os_func() {
           	this.execCommand = function(command,callback) {
           			exec(command, (error, stdout, stderr) => {
                   if (error) {
-
                       return;
+                  }else{
+                    callback(stdout);
                   }
-
-                  callback(stdout);
           			});
           		}
           }
-          var os = new os_func();
-
           os.execCommand(command, function (stdout) {
-              PushNotification(header,stdout);
+              PushNotification(header,stdout, apiKey);
           });
     }else{
       console.log(obj.header+' is disabled.');
