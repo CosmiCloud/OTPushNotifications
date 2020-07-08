@@ -10,7 +10,7 @@
     "enabled" : "y",
     "apikey" : "insert apikey",
     "nodename" : "Test Node",
-    "searchfor"   : "Unhandled Rejection",
+    "searchfor"   : "'Unhandled Rejection'",
     "since" : "5m",
     "header": "Unhandled Rejection"
 },
@@ -18,7 +18,7 @@
     "enabled" : "y",
     "apikey" : "insert apikey",
     "nodename" : "Test Node",
-    "searchfor"   : "Timed out waiting for response",
+    "searchfor"   : "'Timed out waiting for response'",
     "since" : "5m",
     "header": "Timed out"
 },
@@ -26,7 +26,7 @@
     "enabled" : "y",
     "apikey" : "insert apikey",
     "nodename" : "Test Node",
-    "searchfor"   : "I've been chosen",
+    "searchfor"   : "'ve been chosen'",
     "since" : "5m",
     "header": "New offer accepted!"
 },
@@ -34,7 +34,7 @@
     "enabled" : "y",
     "apikey" : "insert apikey",
     "nodename" : "Test Node",
-    "searchfor"   : "fatal",
+    "searchfor"   : "'fatal'",
     "since" : "5m",
     "header": "FATAL ERROR - ATTENTION REQUIRED"
 },
@@ -42,7 +42,7 @@
     "enabled" : "y",
     "apikey" : "insert apikey",
     "nodename" : "Test Node",
-    "searchfor"   : "ETH balance lower",
+    "searchfor"   : "'ETH balance lower'",
     "since" : "5m",
     "header": "Low ether balance"
 },
@@ -50,7 +50,7 @@
     "enabled" : "y",
     "apikey" : "insert apikey",
     "nodename" : "Test Node",
-    "searchfor"   : "Gas price too high",
+    "searchfor"   : "'Gas price too high'",
     "since" : "5m",
     "header": "Gas price too high"
 },
@@ -58,7 +58,7 @@
     "enabled" : "y",
     "apikey" : "insert apikey",
     "nodename" : "Test Node",
-    "searchfor"   : "Not enough tokens. To take additional jobs please complete any finished jobs or deposit more tokens to your profile",
+    "searchfor"   : "'Not enough tokens. To take additional jobs please complete any finished jobs or deposit more tokens to your profile'",
     "since" : "5m",
     "header": "Low trac balance"
 },
@@ -66,7 +66,15 @@
     "enabled" : "n",
     "apikey" : "insert apikey",
     "nodename" : "Test Node",
-    "searchfor"   : "KADemlia",
+    "searchfor"   : "'KADemlia'",
     "since" : "5m",
     "header": "KADemlia warning"
+},
+{
+    "enabled" : "y",
+    "apikey" : "KQBSVFVN0FOQO4RHHOIFM8O3F",
+    "nodename" : "Test Node",
+    "searchfor"   : "'Downloading update:'",
+    "since" : "5m",
+    "header": "Update in progress."
 }]

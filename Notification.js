@@ -1,13 +1,13 @@
 require('dotenv').config();
 const { exec } = require("child_process");
-var https = require("https");
-var querystring = require('querystring');
-var json = require('./config.json');
+const https = require("https");
+const querystring = require('querystring');
+const json = require('./config.json');
 
 for(var i = 0; i < json.length; i++) {
     var obj = json[i];
 
-function PushNotification(PushTitle, PushText, API)
+function PushNotification(PushTitle, PushText)
                 {
                          var apiKey = obj.apikey
                          var postdata = querystring.stringify({
@@ -46,14 +46,26 @@ function PushNotification(PushTitle, PushText, API)
                 }
 
     if(obj.enabled == 'y'){
-        var command = 'sudo docker logs --since '+obj.since+' otnode | grep '+obj.searchfor
-        var header = obj.nodename + ' - '+obj.header
+        const command = 'sudo docker logs --since '+obj.since+' otnode | grep '+obj.searchfor
+        const header = obj.nodename + ' - '+obj.header
 
-        exec(command, (error, stdout, stderr) => {
-            if (stdout){
-                PushNotification(header,stdout);
-            }
-        });
+        function os_func() {
+          	this.execCommand = function(command,callback) {
+          			exec(command, (error, stdout, stderr) => {
+                  if (error) {
+
+                      return;
+                  }
+
+                  callback(stdout);
+          			});
+          		}
+          }
+          var os = new os_func();
+
+          os.execCommand(command, function (stdout) {
+              PushNotification(header,stdout);
+          });
     }else{
       console.log(obj.header+' is disabled.');
     }
