@@ -1,0 +1,72 @@
+[{
+    "enabled" : "n",
+    "apikey" : "insert apikey",
+    "nodename" : "Test Node",
+    "searchfor"   : "memory leak detected",
+    "since" : "5m",
+    "header": "Memory Leak"
+},
+{
+    "enabled" : "y",
+    "apikey" : "insert apikey",
+    "nodename" : "Test Node",
+    "searchfor"   : "Unhandled Rejection",
+    "since" : "5m",
+    "header": "Unhandled Rejection"
+},
+{
+    "enabled" : "y",
+    "apikey" : "insert apikey",
+    "nodename" : "Test Node",
+    "searchfor"   : "Timed out waiting for response",
+    "since" : "5m",
+    "header": "Timed out"
+},
+{
+    "enabled" : "y",
+    "apikey" : "insert apikey",
+    "nodename" : "Test Node",
+    "searchfor"   : "I've been chosen",
+    "since" : "5m",
+    "header": "New offer accepted!"
+},
+{
+    "enabled" : "y",
+    "apikey" : "insert apikey",
+    "nodename" : "Test Node",
+    "searchfor"   : "fatal",
+    "since" : "5m",
+    "header": "FATAL ERROR - ATTENTION REQUIRED"
+},
+{
+    "enabled" : "y",
+    "apikey" : "insert apikey",
+    "nodename" : "Test Node",
+    "searchfor"   : "ETH balance lower",
+    "since" : "5m",
+    "header": "Low ether balance"
+},
+{
+    "enabled" : "y",
+    "apikey" : "insert apikey",
+    "nodename" : "Test Node",
+    "searchfor"   : "Gas price too high",
+    "since" : "5m",
+    "header": "Gas price too high"
+},
+{
+    "enabled" : "y",
+    "apikey" : "insert apikey",
+    "nodename" : "Test Node",
+    "searchfor"   : "Not enough tokens. To take additional jobs please complete any finished jobs or deposit more tokens to your profile",
+    "since" : "5m",
+    "header": "Low trac balance"
+},
+{
+    "enabled" : "n",
+    "apikey" : "insert apikey",
+    "nodename" : "Test Node",
+    "searchfor"   : "KADemlia",
+    "since" : "5m",
+    "header": "Low trac balance"
+}]
